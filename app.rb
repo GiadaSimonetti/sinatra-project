@@ -13,6 +13,11 @@ get '/break' do
   'Go soon!'
 end
 
-get 'finally' do
+get '/finally' do
   'IT WORKS!'
+end
+
+get '/cat' do
+  # set :public_folder, File.dirname(__FILE__) + '/static'
+  erb :cat
 end
