@@ -17,7 +17,13 @@ get '/finally' do
   'IT WORKS!'
 end
 
-get '/cat' do
-  @random = ["Amigo", "Oscar", "Viking"].sample
+get '/random-cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb :cat
+end
+
+get '/named-cat' do
+  @name = params[:name]
+  p params
   erb :cat
 end
