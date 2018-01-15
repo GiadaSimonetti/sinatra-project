@@ -18,6 +18,6 @@ get '/finally' do
 end
 
 get '/cat' do
-  # set :public_folder, File.dirname(__FILE__) + '/static'
+  @random = ["Amigo", "Oscar", "Viking"].sample
   erb :cat
 end
